@@ -4,7 +4,7 @@ import App from './App';
 import { ThemeProvider, createTheme, CssBaseline } from '@mui/material';
 import Header from './components/Header';
 
-const Main = () => {
+export const Main = () => {
     const [isDarkMode, setIsDarkMode] = useState(false);
 
     const theme = createTheme({

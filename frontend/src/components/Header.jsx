@@ -3,14 +3,13 @@ import PropTypes from 'prop-types';
 import { AppBar, Toolbar, Typography, Box, IconButton, Switch } from '@mui/material';
 import WbSunnyIcon from '@mui/icons-material/WbSunny';
 import Brightness2Icon from '@mui/icons-material/Brightness2';
-import Logo from '../assets/Final-logo.svg';
 
 const Header = ({ isDarkMode, toggleTheme }) => {
     return (
         <AppBar position="static" elevation={2} sx={{ backgroundColor: isDarkMode ? '#121212' : 'white' }}>
             <Toolbar sx={{ justifyContent: 'space-between' }}>
                 {/* Logo */}
-                <Box component="img" src={Logo} alt="Logo" sx={{ height: 40 }} />
+                <img src={"final.svg"} alt="Logo" height={40}  />
 
                 {/* Title */}
                 <Typography
